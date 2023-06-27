@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>∅SLO - Armá tu viaje</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <a href="../index.html">∅SLO</a>
+    <a href="./salidas-grupales.html">Salidas Grupales</a>
+    <a href="./arma-tu-viaje.html">Armá tu viaje</a> <!--formulario-->
+    <a href="./quienes-somos.html">Quienes somos</a> <!--fotos, agencia, trayectoria, fotos viajes-->
+    <a href="./contacto.html">Contacto</a>   
+
+    <form>
+        <div>
+            <input type="text" placeholder="Ingrese su nombre" required>
+        </div>
+        <div>
+            <input type="number" placeholder="Ingrese su teléfono" required>
+        </div>
+        <div>
+            <input type="email" placeholder="Ingrese su e-mail" required>
+        </div>
+        
+        <h2>Cantindad de pasajeros</h2>
+        <div>
+            <input type="number" placeholder="Mayores de edad" required>
+            <input type="number" placeholder="Menores de edad">
+        </div>
+        <h3>Fecha de salida</h3>
+        <div>
+            <input type="date" required>
+        </div>
+        <h3>Fecha de vuelta</h3>
+        <div>
+            <input type="date" required>
+        </div>
+
+        <h2>Destino:</h2>
+        <div>
+            <input type="radio" id="Argentina" name="Destino"> <label for="Argentina">Argentina</label>
+            <input type="radio" id="Caribe" name="Destino"> <label for="Caribe">Caribe</label>
+            <input type="radio" id="Europa" name="Destino"> <label for="Europa">Europa</label>
+            <input type="radio" id="EstadosUnidos" name="Destino"> <label for="EstadosUnidos">Estados Unidos</label>
+            <input type="radio" id="Otro" name="Destino"> <label for="Otro">Otro</label>
+        </div>
+        <div>
+            <textarea placeholder="Ingresar detalles o ideas que quieras que tengamos en cuenta" cols="60" rows="10"></textarea required>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
