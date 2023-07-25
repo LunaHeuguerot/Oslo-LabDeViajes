@@ -277,12 +277,52 @@
   margin-bottom: 20px; 
 }
 
+.content-wrapper {
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+}
+
+.quienes-somos-img {
+  flex: 1;
+  max-width: calc(100% / 3); 
+  margin-right: 20px; 
+}
+
+.quienes-somos-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto-quienes-somos {
+  flex: 2; 
+}
 
 
-@media (max-width: 768px) {
+
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
   .mi-navbar {
     display: none;
   }
+
+  .content-wrapper {
+    flex-direction: column; 
+}
+
+.quienes-somos-img {
+    max-width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 20px; 
+}
+
+.texto-quienes-somos {
+    order: -1; 
+}
 }
 
 @media (min-width: 768px) {
@@ -297,4 +337,8 @@
     border: 5px outset #81c3d7; 
     padding: 20px; 
 }
+
+
+
+
 }
