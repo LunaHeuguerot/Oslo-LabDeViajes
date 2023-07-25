@@ -40,7 +40,7 @@
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 30px;
 }
 
 .gallery img {
@@ -125,7 +125,7 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
-  background-color: #81c3d7;
+  /* background-color: #81c3d7; */
   z-index: -1;
 }
 
@@ -152,7 +152,14 @@
   }
 
   .fotos {
-    border: 5px  solid  #6696a5
+    border: 5px  solid  #6696a5;
+    filter: grayscale(70%);
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .fotos:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
   }
 
  
@@ -287,7 +294,7 @@
 
   .carousel-container {
     background-color: #c3d9e5d2;
-    border: 5px outset #81c3d7; /* Borde de las notas de papel */
-    padding: 20px; /* Espacio interno */
+    border: 5px outset #81c3d7; 
+    padding: 20px; 
 }
 }
