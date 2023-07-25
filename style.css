@@ -291,6 +291,7 @@
 .quienes-somos-img img {
   max-width: 100%;
   height: auto;
+  border: 5px solid #6696a5;
 }
 
 .texto-quienes-somos {
@@ -338,6 +339,24 @@
     padding: 20px; 
 }
 
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Open Sans, sans-serif;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.mapa-quienes-somos {
+  background-color: #81c3d758;
+  border-radius: 1rem;
+  margin: 1rem;
+  margin-top: 20px;
+  border: solid #81c3d7;
+}
 
 
 
