@@ -279,7 +279,7 @@
 
 .content-wrapper {
   display: flex;
-  align-items: center; /* Alinear verticalmente */
+  align-items: center; 
 }
 
 .quienes-somos-img {
