@@ -323,6 +323,23 @@
 
 .texto-quienes-somos {
     order: -1; 
+    text-align: center;
+    margin-inline: 1rem;
+}
+
+.mapa-iframe {
+  position: relative;
+  width: 80%;
+  margin: 0 auto; 
+  padding-top: 80%; 
+}
+
+.mapa-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 }
 
