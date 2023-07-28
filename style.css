@@ -38,9 +38,11 @@
   }
 
   .gallery {
+    margin-top: 20px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 35px;
 }
 
 .gallery img {
@@ -152,7 +154,7 @@
   }
 
   .fotos {
-    border: 5px  solid  #6696a5;
+    border: 5px  outset  #6696a5;
     filter: grayscale(70%);
     transition: transform 0.3s, filter 0.3s;
   }
@@ -160,6 +162,7 @@
   .fotos:hover {
     transform: scale(1.2);
     filter: grayscale(0%);
+    
   }
 
  
@@ -262,13 +265,13 @@
 
 .contenedor-flex {
   display: flex; 
+  margin-top: 20px;
   justify-content: space-between; 
   flex-wrap: wrap; 
 }
 
 
-.nota-papel-salidas {
-  
+.nota-papel-salidas {  
   background-image: url("./img/fondo-notas.jpg");
   background-size: cover;
   border: 5px outset #81c3d7;
