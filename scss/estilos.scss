@@ -1,0 +1,114 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/navbar";
+@import "./partials/background";
+@import "./partials/main";
+@import "./partials/footer";
+
+
+@media screen and (max-width: 768px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .mi-navbar {
+      display: none;
+    }
+
+    .navbar {
+        background-color: $colorPrincipal;
+        padding-inline: 10px;
+        font-family: $font-family_1; 
+        
+        
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            padding: 8px 16px; 
+            margin-left: 10px;
+                      
+        }
+    }
+  
+    .quienes-somos{
+        align-content: center;
+        .content-wrapper {
+            flex-direction: column; 
+            
+            .quienes-somos-img {
+                max-width: 75%; 
+                margin-right: 0; 
+                margin-top: 20px;
+                margin-bottom: 5rem; 
+            }
+            
+            .texto-quienes-somos {
+                order: -1; 
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 3rem; 
+                max-width: 90%; /* Ancho del 80% de la pantalla */
+            }
+        }
+        
+    }
+        .mapa-iframe {
+            position: relative;
+            width: 95%; 
+            text-align: center;
+            
+            iframe {
+                position: relative;
+                width: 100%;
+                margin-left: 1rem;
+                
+                
+            }
+        }
+
+    
+}
+
+
+    
+  @media (min-width: 768px) {
+
+
+    
+
+    .carousel-container {
+        background-color: #c3d9e5d2;
+        border: 5px outset $colorPrincipal; 
+        padding: 20px; 
+        .carousel .carousel-inner .carousel-item img {
+            max-height: 500px; 
+            width: auto; 
+            object-fit: contain; 
+        }
+    }
+  
+    
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: $font-family_1;
+    color: #333333;
+    margin-top: 20px;
+  }
+  
+  .mapa-quienes-somos {
+    background-color: #81c3d758;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-top: 20px;
+    border: solid $colorPrincipal;
+  }
+  
+  
+  
+  }

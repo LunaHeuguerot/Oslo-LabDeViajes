@@ -1,0 +1,165 @@
+main {
+  .gallery {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nota-papel {
+      @include notas;
+      padding: 20px;
+      width: 100%;
+      max-width: 100%;
+      grid-column: span 1;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      grid-column: span 3;
+      
+      &:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        /* background-color: #81c3d7; */
+        z-index: -1;
+      }
+
+      .contenido {
+        position: relative;
+        font-family: $font-family_1;
+        text-align: center;
+        
+        a {
+          @include links;
+        }
+        
+
+        .avisos {
+          @include avisos;
+        }
+      }
+    } 
+
+    .fotos {
+      @include filter-fotos;
+
+      &:nth-child(3n + 1) {
+        grid-column: span 1;
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+    
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .contenedor-flex {
+    display: flex; 
+    margin-top: 20px;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+
+    .nota-papel-salidas {  
+      @include notas;
+      padding: 20px;
+      width: calc(50% - 10px); 
+      margin-bottom: 20px; 
+
+      .contenido {
+        position: relative;
+        font-family: $font-family_1;
+        text-align: center;
+        
+        a {
+          @include links;
+        }
+
+        
+
+        .avisos {
+          @include avisos;
+          
+
+          
+        }
+      }
+    }
+  }
+
+  .salidas-grupales {
+    position: relative;
+    margin-bottom: 150px;
+    display: block;
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center; 
+
+    .quienes-somos-img {
+      flex: 1;
+      max-width: calc(100% / 3); 
+      margin-right: 35px; 
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        @include filter-fotos;
+  
+          
+        }
+      }
+      
+      .texto-quienes-somos {
+        flex: 2; 
+      }
+    }
+
+    .mapa-quienes-somos {
+      position: relative;
+      font-family: $font-family_1;
+      text-align: center;
+    }
+
+    .contacto {
+      @include notas;
+      padding: 20px;
+      margin: 20px;
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+
+      .info-contacto {
+        font-family: $font-family_1;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+        
+      }
+      
+    }
+  }
+
+  @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}

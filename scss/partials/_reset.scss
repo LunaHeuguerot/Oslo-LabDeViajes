@@ -1,0 +1,23 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation:fade-in-fwd 1.5s cubic-bezier(.39,.575,.565,1.000) .2s both;
+  
+  &::selection {
+    background-color: $colorPrincipal;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+@keyframes fade-in-fwd{0%{transform:translateZ(-80px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+
+
+
