@@ -156,10 +156,17 @@ main {
         margin-bottom: 10px;
         text-align: center;
         width: 100%;
+
+        
         
       }
       
     }
+
+    
+
+
+
   }
 
   @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
