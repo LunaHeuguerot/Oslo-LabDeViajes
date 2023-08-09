@@ -15,15 +15,45 @@ ul.mi-navbar {
       color: white;
       text-align: center;
       padding: 14px 16px;
-      text-decoration: none !important;
+      
 
       &:hover {
         color: black;
         font-weight: bolder;
         -webkit-animation: color-change-2x 1s linear infinite alternate both;
         animation: color-change-2x 1s linear infinite alternate both;
+        
       }
+
     }
+
+    span {
+
+      .avion-1 {
+        @include aviones;
+        
+        &:hover {
+          transform: translate(10px, -10px);
+        }
+      }
+      
+      .avion-2 {
+        @include aviones;
+        transform: rotate(90deg);
+        
+        
+        &:hover {
+          transform: rotate(90deg) translateY(-30px);
+        }
+        
+        
+      }
+      
+      
+      
+    }
+
+      
   }
 }
 

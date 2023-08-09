@@ -1,10 +1,15 @@
 main {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  
   .gallery {
     margin-top: 20px;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px;
+    
     
     img {
       width: 100%;
@@ -50,10 +55,15 @@ main {
     } 
 
     .fotos {
-      @include filter-fotos;
+      border: 5px outset $colorPrincipal;
+      transition: 0.3s;
 
       &:nth-child(3n + 1) {
         grid-column: span 1;
+      }
+
+      &:hover {
+        transform: scale(1.2);
       }
     }
 
@@ -123,7 +133,7 @@ main {
       img {
         max-width: 100%;
         height: auto;
-        @include filter-fotos;
+        @include filter-fotos-qs;
   
           
         }
@@ -140,6 +150,8 @@ main {
       text-align: center;
     }
 
+    
+
     .contacto {
       @include notas;
       padding: 20px;
@@ -150,18 +162,19 @@ main {
       flex-wrap: wrap; 
       justify-content: center;
 
+
       .info-contacto {
         font-family: $font-family_1;
         display: block;
         margin-bottom: 10px;
         text-align: center;
-        width: 100%;
-
-        
+        width: 100%,
         
       }
       
     }
+
+    
 
     
 
@@ -170,3 +183,4 @@ main {
   }
 
   @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+  

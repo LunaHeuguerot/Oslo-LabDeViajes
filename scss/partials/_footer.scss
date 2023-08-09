@@ -1,33 +1,22 @@
-.mi-footer {
-  background-color: $background-color_2;
-  text-align: center;
-  color: #c0ccd3;
-  padding: 20px;
-  width: 100%;
-  font-family: $font-family_1;
-  font-size: smaller;
-  min-height: 150px;
 
-  .oslo-footer {
-    color: #f2f2f2;
+
+  .mi-footer {
+    background-color: $background-color_2;
+    text-align: center;
+    color: #c0ccd3;
+    padding: 20px;
+    width: 100%;
     font-family: $font-family_1;
-  }
-}
+    font-size: smaller;
+    min-height: 150px;
+    bottom: 0;
+    margin-top: auto;
 
-.mi-footer-contacto {
-  position:relative;
-  margin-top: 5rem;
-  background-color: $background-color_2;
-  text-align: center;
-  color: #c0ccd3;
-  padding: 20px;
-  width: 100%;
-  font-family: $font-family_1;
-  font-size: smaller;
-  min-height: 150px;
-
-  .oslo-footer {
-    color: #f2f2f2;
-    font-family: $font-family_1;
+    .oslo-footer {
+      color: #f2f2f2;
+      font-family: $font-family_1;
+    }
   }
-}
+
+
+
