@@ -64,69 +64,100 @@
 
 
 <main>
-    
-    <h2 class="atv-titulo">CONTANOS, ¿CÓMO VAN A SER TUS PROXIMAS VACACIONES?</h2>
-    
-    <form class="container mt-5">
-        <h3 class="mt-4">Datos personales</h3>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
-        </div>
-        <div class="form-group">
-            <input type="number" class="form-control" placeholder="Ingrese su teléfono" required>
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Ingrese su e-mail" required>
-        </div>
+    <section class="formulario-atv">
+
+        <h2 class="atv-titulo">
+           
+            CONTANOS, ¿CÓMO VAN A SER TUS PROXIMAS VACACIONES?
+            <span class="material-symbols-outlined manito">
+                waving_hand
+            </span>
+        </h2>
         
-        <h3 class="mt-4">Cantidad de pasajeros</h3>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <input type="number" class="form-control" placeholder="Mayores de edad" required>
+        <form class="container mt-5">
+            <h3 class="mt-4 categorias-atv"><span class="material-symbols-outlined">
+                airplane_ticket
+                </span>
+                Datos personales:
+            </h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
             </div>
-            <div class="form-group col-md-6">
-                <input type="number" class="form-control" placeholder="Menores de edad">
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Ingrese su teléfono" required>
             </div>
-        </div>
-        
-        <h3 class="mt-4">Fecha de salida</h3>
-        <div class="form-group">
-            <input type="date" class="form-control" required>
-        </div>
-        
-        <h3 class="mt-4">Fecha de vuelta</h3>
-        <div class="form-group">
-            <input type="date" class="form-control" required>
-        </div>
-        
-        <h3 class="mt-4">Destino:</h3>
-        <div class="form-check">
-            <input type="radio" id="Argentina" name="Destino" class="form-check-input">
-            <label class="form-check-label" for="Argentina">Argentina</label>
-        </div>
-        <div class="form-check">
-            <input type="radio" id="Caribe" name="Destino" class="form-check-input">
-            <label class="form-check-label" for="Caribe">Caribe</label>
-        </div>
-        <div class="form-check">
-            <input type="radio" id="Europa" name="Destino" class="form-check-input">
-            <label class="form-check-label" for="Europa">Europa</label>
-        </div>
-        <div class="form-check">
-            <input type="radio" id="EstadosUnidos" name="Destino" class="form-check-input">
-            <label class="form-check-label" for="EstadosUnidos">Estados Unidos</label>
-        </div>
-        <div class="form-check">
-            <input type="radio" id="Otro" name="Destino" class="form-check-input">
-            <label class="form-check-label" for="Otro">Otro</label>
-        </div>
-        
-        <div class="form-group mt-4">
-            <textarea class="form-control" placeholder="Ingresar detalles o ideas que quieras que tengamos en cuenta" rows="5" required></textarea>
-        </div>
-    
-            <input type="submit" value="Enviar" class="btn btn-primary">
-        
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Ingrese su e-mail" required>
+            </div>
+            
+            <h3 class="mt-4 categorias-atv"><span class="material-symbols-outlined">
+                airplane_ticket
+                </span>
+                Cantidad de pasajeros:
+            </h3>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="number" class="form-control" placeholder="Mayores de edad" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="number" class="form-control" placeholder="Menores de edad">
+                </div>
+            </div>
+            
+            <h3 class="mt-4 categorias-atv">
+                <span class="material-symbols-outlined">
+                    airplane_ticket
+                </span>
+                Fecha de salida:
+            </h3>
+            <div class="form-group">
+                <input type="date" class="form-control" required>
+            </div>
+            
+            <h3 class="mt-4 categorias-atv">
+                <span class="material-symbols-outlined">
+                    airplane_ticket
+                </span>
+                Fecha de vuelta:
+            </h3>
+            <div class="form-group">
+                <input type="date" class="form-control" required>
+            </div>
+            
+            <h3 class="mt-4 categorias-atv">
+                <span class="material-symbols-outlined">
+                    airplane_ticket
+                </span>
+                Destino:
+            </h3>
+            <div class="form-check">
+                <input type="radio" id="Argentina" name="Destino" class="form-check-input">
+                <label class="form-check-label" for="Argentina">Argentina</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="Caribe" name="Destino" class="form-check-input">
+                <label class="form-check-label" for="Caribe">Caribe</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="Europa" name="Destino" class="form-check-input">
+                <label class="form-check-label" for="Europa">Europa</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="EstadosUnidos" name="Destino" class="form-check-input">
+                <label class="form-check-label" for="EstadosUnidos">Estados Unidos</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="Otro" name="Destino" class="form-check-input">
+                <label class="form-check-label" for="Otro">Otro</label>
+            </div>
+            
+            <div class="form-group mt-4">
+                <textarea class="form-control" placeholder="Ingresar detalles o ideas que quieras que tengamos en cuenta" rows="5" required></textarea>
+            </div>
+            
+            <input type="submit" value="Enviar" class="btn btn-primary boton">
+            
+        </section>
     </form>
 
     

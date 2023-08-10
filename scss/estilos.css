@@ -191,7 +191,7 @@ main .gallery .nota-papel .contenido .avisos {
   font-family: "Roboto Slab", serif;
   text-align: center;
   animation: bounce-top 1s ease-out both;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #81c3d7 0, 0, 0, 0.5;
 }
 main .gallery .fotos {
   border: 5px outset #81c3d7;
@@ -240,7 +240,7 @@ main .contenedor-flex .nota-papel-salidas .contenido .avisos {
   font-family: "Roboto Slab", serif;
   text-align: center;
   animation: bounce-top 1s ease-out both;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #81c3d7 0, 0, 0, 0.5;
 }
 main .salidas-grupales {
   position: relative;
@@ -307,12 +307,41 @@ main .video-contacto {
   flex-wrap: wrap;
   justify-content: center;
 }
-main .atv-titulo {
+main .video-contacto video {
+  max-width: 90%;
+}
+main .formulario-atv {
+  font-family: "Roboto Slab", serif;
+  text-shadow: 1px 1px 2px #81c3d7;
+  margin-bottom: 2rem;
+}
+main .formulario-atv .atv-titulo {
   font-family: "Roboto Slab", serif;
   text-align: center;
   animation: bounce-top 1s ease-out both;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px #81c3d7 0, 0, 0, 0.5;
+  margin: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  border: 3px outset #81c3d7;
+  padding-block: 1.5rem;
+}
+main .formulario-atv .atv-titulo .manito {
+  animation: wobble-hor-bottom 1s linear 0.5s 10 both;
+  font-size: larger;
+  margin: 1rem;
+}
+main .formulario-atv .categorias-atv {
+  margin-left: 1rem;
+}
+main .formulario-atv .boton {
   margin-top: 1rem;
+  background-color: #81c3d7;
+  border: #81c3d7;
+  transition: 0.3s;
+}
+main .formulario-atv .boton:hover {
+  transform: scale(1.5);
 }
 
 @keyframes slide-in-left {
@@ -323,6 +352,27 @@ main .atv-titulo {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
 .mi-footer {
@@ -397,6 +447,12 @@ main .atv-titulo {
     height: fit-content;
   }
   .video-contacto iframe {
+    display: none;
+  }
+  .atv-titulo {
+    font-size: medium;
+  }
+  .atv-titulo .manito {
     display: none;
   }
 }

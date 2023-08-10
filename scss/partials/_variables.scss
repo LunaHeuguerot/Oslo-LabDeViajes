@@ -24,7 +24,7 @@ $backgroundBody: url("../../img/fondo.jpg");
     font-family: $font-avisos;
     text-align: center;
     animation:bounce-top 1s ease-out both;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px $colorPrincipal (0, 0, 0, 0.5);
 }
 
 @mixin links {
