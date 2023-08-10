@@ -100,11 +100,22 @@ ul.mi-navbar li .avion-2 {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  transform: rotate(90deg);
   transition: 0.3s;
+  transform: rotate(90deg);
 }
 ul.mi-navbar li .avion-2:hover {
   transform: rotate(90deg) translateY(-30px);
+}
+ul.mi-navbar li .avion-3 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  transition: 0.3s;
+  transform: translateY(-15px);
+}
+ul.mi-navbar li .avion-3:hover {
+  transform: translate(30px, 5px);
 }
 
 @keyframes color-change-2x {
@@ -180,6 +191,7 @@ main .gallery .nota-papel .contenido .avisos {
   font-family: "Roboto Slab", serif;
   text-align: center;
   animation: bounce-top 1s ease-out both;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 main .gallery .fotos {
   border: 5px outset #81c3d7;
@@ -228,6 +240,7 @@ main .contenedor-flex .nota-papel-salidas .contenido .avisos {
   font-family: "Roboto Slab", serif;
   text-align: center;
   animation: bounce-top 1s ease-out both;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 main .salidas-grupales {
   position: relative;
@@ -267,11 +280,17 @@ main .contacto {
   border: 5px outset #81c3d7;
   padding: 20px;
   margin: 20px;
-  max-width: 100%;
+  width: 95%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+}
+main .contacto h2 {
+  font-family: "Roboto Slab", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 main .contacto .info-contacto {
   font-family: "Open Sans", sans-serif;
@@ -279,6 +298,21 @@ main .contacto .info-contacto {
   margin-bottom: 10px;
   text-align: center;
   width: 100%;
+}
+main .video-contacto {
+  margin: 20px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .atv-titulo {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  animation: bounce-top 1s ease-out both;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
 }
 
 @keyframes slide-in-left {
@@ -355,6 +389,15 @@ main .contacto .info-contacto {
     position: relative;
     width: 100%;
     margin-left: 1rem;
+  }
+  .contacto {
+    margin: 1rem;
+    max-width: 90%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .video-contacto iframe {
+    display: none;
   }
 }
 @media (min-width: 768px) {

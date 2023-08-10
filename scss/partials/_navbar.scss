@@ -27,7 +27,7 @@ ul.mi-navbar {
 
     }
 
-    span {
+    
 
       .avion-1 {
         @include aviones;
@@ -36,22 +36,26 @@ ul.mi-navbar {
           transform: translate(10px, -10px);
         }
       }
-      
+
       .avion-2 {
         @include aviones;
         transform: rotate(90deg);
-        
-        
+
         &:hover {
           transform: rotate(90deg) translateY(-30px);
         }
-        
-        
       }
-      
-      
-      
-    }
+
+      .avion-3 {
+        @include aviones; 
+        transform: translateY(-15px);
+
+        &:hover {
+          transform: translate(30px, 5px);
+        }
+       
+      }
+    
 
       
   }
@@ -59,4 +63,3 @@ ul.mi-navbar {
 
 
 @keyframes color-change-2x{0%{background:#19919a}100%{background:$colorPrincipal}}
-
