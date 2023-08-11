@@ -6,117 +6,106 @@
 @import "./partials/footer";
 
 
-@media screen and (max-width: 768px) {
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    .mi-navbar {
+//PANTALLAS MAS CHICAS
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .mi-navbar {
+    display: none;
+  }
+
+  .navbar {
+    background-color: $colorPrincipal;
+    padding-inline: 10px;
+    font-family: $font-family_1; 
+        
+        
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      padding: 8px 16px; 
+      margin-left: 10px;
+                      
+    }
+  }
+  
+  .quienes-somos{
+    align-content: center;
+    
+    .content-wrapper {
+      flex-direction: column; 
+            
+      .quienes-somos-img {
+        max-width: 75%; 
+        margin-right: 0; 
+        margin-top: 20px;
+        margin-bottom: 5rem; 
+      }
+            
+      .texto-quienes-somos {
+        order: -1; 
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem; 
+        max-width: 90%; 
+      }
+    }
+        
+  }
+  
+  .mapa-iframe {
+    position: relative;
+    width: 95%; 
+    text-align: center;
+            
+    iframe {
+      position: relative;
+      width: 100%;
+      margin-left: 1rem;
+    }
+  }
+
+  .contacto {
+    margin: 1rem;
+    max-width: 90%;
+    height: fit-content;
+  }
+        
+  .video-contacto {
+                    
+    iframe {
       display: none;
     }
-
-    .navbar {
-        background-color: $colorPrincipal;
-        padding-inline: 10px;
-        font-family: $font-family_1; 
-        
-        
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            padding: 8px 16px; 
-            margin-left: 10px;
-                      
-        }
-    }
-  
-    .quienes-somos{
-        align-content: center;
-        .content-wrapper {
-            flex-direction: column; 
-            
-            .quienes-somos-img {
-                max-width: 75%; 
-                margin-right: 0; 
-                margin-top: 20px;
-                margin-bottom: 5rem; 
-            }
-            
-            .texto-quienes-somos {
-                order: -1; 
-                text-align: center;
-                margin-top: 1rem;
-                margin-bottom: 3rem; 
-                max-width: 90%; /* Ancho del 80% de la pantalla */
-            }
-        }
-        
-    }
-        .mapa-iframe {
-            position: relative;
-            width: 95%; 
-            text-align: center;
-            
-            iframe {
-                position: relative;
-                width: 100%;
-                margin-left: 1rem;
-                
-                
-            }
-        }
-
-      .contacto {
-        margin: 1rem;
-        max-width: 90%;
-        height: fit-content;
-      }
-        .video-contacto {
-          // position: relative;
-          // width: 85%; 
-          // text-align: center;
-          
-          iframe {
-            // position: relative;
-            // width: 100%;
-            // margin-right: 1rem;
-            display: none;
-            
-            
-          }
-        }
+  }
       
+  .atv-titulo {
+    font-size: medium;
 
-      .atv-titulo {
-        font-size: medium;
-
-        .manito {
-          display: none;
-        }
-      }
-      
-
-    
+    .manito {
+      display: none;
+    }
+  }
 }
 
-
+//PANTALLAS GRANDES
     
-  @media (min-width: 768px) {
-
-
+@media (min-width: 768px) {
+  
+  .carousel-container {
+    background-color: #c3d9e5d2;
+    border: 5px outset $colorPrincipal; 
+    padding: 20px; 
     
-
-    .carousel-container {
-        background-color: #c3d9e5d2;
-        border: 5px outset $colorPrincipal; 
-        padding: 20px; 
-        .carousel .carousel-inner .carousel-item img {
-            max-height: 500px; 
-            width: auto; 
-            object-fit: contain; 
-        }
+    .carousel .carousel-inner .carousel-item img {
+      max-height: 500px; 
+      width: auto; 
+      object-fit: contain; 
     }
+  }
   
     
   
@@ -138,7 +127,4 @@
     margin-top: 20px;
     border: solid $colorPrincipal;
   }
-  
-  
-  
-  }
+}
