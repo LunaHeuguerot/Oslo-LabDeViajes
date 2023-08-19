@@ -22,6 +22,8 @@ main {
     grid-gap: 20px;
     
     
+    
+    
 
     img {
       width: 100%;
@@ -36,6 +38,7 @@ main {
       width: 100%;
       max-width: 100%;
       grid-column: span 1;
+      margin-inline: auto;
       margin-top: 1rem;
       margin-bottom: 1rem;
       grid-column: span 3;
@@ -109,6 +112,7 @@ main {
         position: relative;
         font-family: $font-family_1;
         text-align: center;
+        
         
         a {
           @include links;
@@ -189,7 +193,7 @@ main {
 
       h2 {
         font-family: $font-avisos;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 4px $background-color_2;
         text-align: center;
         
       }

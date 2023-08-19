@@ -20,8 +20,11 @@ $backgroundBody: url("../../img/fondo.jpg");
 
 
 @mixin notas {    
-    background-color: #c0d0d574;   
-    border: 5px inset $background-color_2;
+    background-color: $background-color_1;   
+    border-radius: 1rem;
+    border: 5px dashed $colorPrincipal;    
+    
+    
 
 }
 
@@ -29,7 +32,7 @@ $backgroundBody: url("../../img/fondo.jpg");
     font-family: $font-avisos;
     text-align: center;
     animation:bounce-top 1s ease-out both;
-    text-shadow: 2px 2px 4px $colorPrincipal (0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px $background-color_2;
 }
 
 @mixin links {
