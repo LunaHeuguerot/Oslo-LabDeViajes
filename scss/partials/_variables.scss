@@ -20,8 +20,8 @@ $backgroundBody: url("../../img/fondo.jpg");
 
 
 @mixin notas {    
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    border: 5px outset $colorPrincipal;
+    background-color: #c0d0d574;   
+    border: 5px inset $background-color_2;
 
 }
 
@@ -36,10 +36,11 @@ $backgroundBody: url("../../img/fondo.jpg");
     color: $colorPrincipal;
     text-decoration: none;
     
+    
     &:hover {
         color: #60daff;
-        font-weight: bolder;
-        font-size: larger;
+        text-decoration: underline;
+        
     }
 }
 

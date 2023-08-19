@@ -3,17 +3,25 @@ main {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-
+  overflow: hidden;
+  max-width: 1600px;
+  margin: auto;
 
 
 
 // GALLERY STYLES
+  .carrusel-responsive {
+    display: none;
+  }
+
   .gallery {
     margin-top: 20px;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px;
+    grid-gap: 20px;
+    
+    
 
     img {
       width: 100%;
@@ -167,7 +175,8 @@ main {
     .contacto {
       @include notas;
       padding: 20px;
-      margin: 20px;
+      margin: auto;
+      margin-bottom: 1rem;      
       width: 95%; 
       position: relative;
       display: flex;

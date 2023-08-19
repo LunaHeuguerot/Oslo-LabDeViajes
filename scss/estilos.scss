@@ -33,6 +33,32 @@
     }
   }
   
+
+  .gallery {
+    
+    .fotos {
+      display: none;
+    }
+
+    .carrusel-responsive {
+      display: grid;
+      grid-column: span 3;
+      margin-inline: auto;
+      max-width: 90%;
+      
+    }
+  }
+
+  .contenedor-flex {
+    display: grid;
+    
+
+    .nota-papel-salidas {      
+      width: 100% !important; 
+    }
+  }
+  
+
   .quienes-somos{
     align-content: center;
     
@@ -41,16 +67,15 @@
             
       .quienes-somos-img {
         max-width: 75%; 
-        margin-right: 0; 
-        margin-top: 20px;
-        margin-bottom: 5rem; 
+        margin-inline: auto;
+        margin-bottom: 1rem;
       }
             
       .texto-quienes-somos {
         order: -1; 
         text-align: center;
         margin-top: 1rem;
-        margin-bottom: 3rem; 
+        margin-bottom: 1rem; 
         max-width: 90%; 
       }
     }
@@ -65,7 +90,7 @@
     iframe {
       position: relative;
       width: 100%;
-      margin-left: 1rem;
+      margin: 1rem;
     }
   }
 
@@ -76,9 +101,10 @@
   }
         
   .video-contacto {
+    margin-inline: auto;
                     
-    iframe {
-      display: none;
+    iframe {      
+      width: 90%;
     }
   }
       

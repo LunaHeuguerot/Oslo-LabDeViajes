@@ -132,19 +132,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
+  overflow-x: hidden;
 }
 
 main {
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  max-width: 1600px;
+  margin: auto;
+}
+main .carrusel-responsive {
+  display: none;
 }
 main .gallery {
   margin-top: 20px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 35px;
+  grid-gap: 20px;
 }
 main .gallery img {
   width: 100%;
@@ -153,8 +160,8 @@ main .gallery img {
      object-fit: cover;
 }
 main .gallery .nota-papel {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  border: 5px outset #81c3d7;
+  background-color: rgba(192, 208, 213, 0.4549019608);
+  border: 5px inset rgba(22, 66, 91, 0.6117647059);
   padding: 20px;
   width: 100%;
   max-width: 100%;
@@ -170,7 +177,6 @@ main .gallery .nota-papel:before {
   left: -5px;
   right: -5px;
   bottom: -5px;
-  /* background-color: #81c3d7; */
   z-index: -1;
 }
 main .gallery .nota-papel .contenido {
@@ -184,8 +190,7 @@ main .gallery .nota-papel .contenido a {
 }
 main .gallery .nota-papel .contenido a:hover {
   color: #60daff;
-  font-weight: bolder;
-  font-size: larger;
+  text-decoration: underline;
 }
 main .gallery .nota-papel .contenido .avisos {
   font-family: "Roboto Slab", serif;
@@ -216,8 +221,8 @@ main .contenedor-flex {
   flex-wrap: wrap;
 }
 main .contenedor-flex .nota-papel-salidas {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  border: 5px outset #81c3d7;
+  background-color: rgba(192, 208, 213, 0.4549019608);
+  border: 5px inset rgba(22, 66, 91, 0.6117647059);
   padding: 20px;
   width: calc(50% - 10px);
   margin-bottom: 20px;
@@ -233,8 +238,7 @@ main .contenedor-flex .nota-papel-salidas .contenido a {
 }
 main .contenedor-flex .nota-papel-salidas .contenido a:hover {
   color: #60daff;
-  font-weight: bolder;
-  font-size: larger;
+  text-decoration: underline;
 }
 main .contenedor-flex .nota-papel-salidas .contenido .avisos {
   font-family: "Roboto Slab", serif;
@@ -276,10 +280,11 @@ main .mapa-quienes-somos {
   text-align: center;
 }
 main .contacto {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  border: 5px outset #81c3d7;
+  background-color: rgba(192, 208, 213, 0.4549019608);
+  border: 5px inset rgba(22, 66, 91, 0.6117647059);
   padding: 20px;
-  margin: 20px;
+  margin: auto;
+  margin-bottom: 1rem;
   width: 95%;
   position: relative;
   display: flex;
@@ -386,6 +391,7 @@ main .formulario-atv .boton:hover {
   min-height: 150px;
   bottom: 0;
   margin-top: auto;
+  overflow-x: hidden;
 }
 .mi-footer .oslo-footer {
   color: #f2f2f2;
@@ -411,6 +417,21 @@ main .formulario-atv .boton:hover {
     padding: 8px 16px;
     margin-left: 10px;
   }
+  .gallery .fotos {
+    display: none;
+  }
+  .gallery .carrusel-responsive {
+    display: grid;
+    grid-column: span 3;
+    margin-inline: auto;
+    max-width: 90%;
+  }
+  .contenedor-flex {
+    display: grid;
+  }
+  .contenedor-flex .nota-papel-salidas {
+    width: 100% !important;
+  }
   .quienes-somos {
     align-content: center;
   }
@@ -419,16 +440,15 @@ main .formulario-atv .boton:hover {
   }
   .quienes-somos .content-wrapper .quienes-somos-img {
     max-width: 75%;
-    margin-right: 0;
-    margin-top: 20px;
-    margin-bottom: 5rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
   }
   .quienes-somos .content-wrapper .texto-quienes-somos {
     order: -1;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 3rem;
-    max-width: 90%; /* Ancho del 80% de la pantalla */
+    margin-bottom: 1rem;
+    max-width: 90%;
   }
   .mapa-iframe {
     position: relative;
@@ -438,7 +458,7 @@ main .formulario-atv .boton:hover {
   .mapa-iframe iframe {
     position: relative;
     width: 100%;
-    margin-left: 1rem;
+    margin: 1rem;
   }
   .contacto {
     margin: 1rem;
@@ -446,8 +466,11 @@ main .formulario-atv .boton:hover {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .video-contacto {
+    margin-inline: auto;
+  }
   .video-contacto iframe {
-    display: none;
+    width: 90%;
   }
   .atv-titulo {
     font-size: medium;
