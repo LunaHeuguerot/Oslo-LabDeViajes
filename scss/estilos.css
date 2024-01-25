@@ -68,51 +68,66 @@ ul.mi-navbar {
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
   background: rgb(22, 66, 91);
-  background: linear-gradient(90deg, rgb(22, 66, 91) 0%, rgb(129, 195, 215) 61%, rgba(129, 195, 215, 0.5398634796) 94%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(129, 195, 215) 38%, rgb(25, 145, 154) 71%);
   color: #333333;
+  display: flex;
+  text-align: center;
 }
 ul.mi-navbar li {
   float: left;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
 }
 ul.mi-navbar li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-}
-ul.mi-navbar li a:hover {
-  color: black;
+  color: #2b2b2b;
   font-weight: bolder;
-  animation: color-change-2x 1s linear infinite alternate both;
+  font-size: larger;
+  text-align: center;
+  line-height: 3;
+}
+ul.mi-navbar li a:not(img) {
+  margin: auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+}
+ul.mi-navbar li a img {
+  width: 150px;
+  height: auto;
 }
 ul.mi-navbar li .avion-1 {
   display: block;
-  color: white;
+  color: #2b2b2b;
   text-align: center;
   padding: 14px 16px;
   transition: 0.3s;
+  line-height: 2;
 }
 ul.mi-navbar li .avion-1:hover {
   transform: translate(10px, -10px);
 }
 ul.mi-navbar li .avion-2 {
   display: block;
-  color: white;
+  color: #2b2b2b;
   text-align: center;
   padding: 14px 16px;
   transition: 0.3s;
   transform: rotate(90deg);
+  line-height: 2.3;
 }
 ul.mi-navbar li .avion-2:hover {
   transform: rotate(90deg) translateY(-30px);
 }
 ul.mi-navbar li .avion-3 {
   display: block;
-  color: white;
+  color: #2b2b2b;
   text-align: center;
   padding: 14px 16px;
   transition: 0.3s;
   transform: translateY(-15px);
+  line-height: 2.5;
 }
 ul.mi-navbar li .avion-3:hover {
   transform: translate(30px, 5px);
