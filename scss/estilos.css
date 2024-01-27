@@ -68,7 +68,7 @@ ul.mi-navbar {
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
   background: rgb(22, 66, 91);
-  background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgb(129, 195, 215) 38%, rgb(25, 145, 154) 71%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 15%, rgb(129, 195, 215) 38%, rgb(25, 145, 154) 71%);
   color: #333333;
   display: flex;
   text-align: center;
@@ -195,6 +195,10 @@ main .gallery .nota-papel:before {
   right: -5px;
   bottom: -5px;
   z-index: -1;
+}
+main .gallery .nota-papel .logo-aviso {
+  height: 4rem;
+  width: auto;
 }
 main .gallery .nota-papel .contenido {
   position: relative;
